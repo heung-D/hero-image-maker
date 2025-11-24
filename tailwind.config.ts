@@ -104,12 +104,36 @@ export default {
             transform: "translateY(0)",
           },
         },
+        "gradient-shift": {
+          "0%": {
+            backgroundPosition: "0% 50%",
+          },
+          "50%": {
+            backgroundPosition: "100% 50%",
+          },
+          "100%": {
+            backgroundPosition: "0% 50%",
+          },
+        },
+        "sunrise": {
+          "0%": {
+            background: "linear-gradient(135deg, hsl(230 45% 15%) 0%, hsl(240 50% 25%) 50%, hsl(250 55% 35%) 100%)",
+          },
+          "50%": {
+            background: "linear-gradient(135deg, hsl(240 50% 25%) 0%, hsl(15 75% 45%) 30%, hsl(30 85% 55%) 60%, hsl(200 65% 60%) 100%)",
+          },
+          "100%": {
+            background: "linear-gradient(135deg, hsl(15 85% 55%) 0%, hsl(30 90% 65%) 30%, hsl(35 95% 70%) 60%, hsl(200 70% 70%) 100%)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 0.8s ease-out forwards",
         "fade-in-delay": "fade-in-delay 1.2s ease-out forwards",
+        "gradient-shift": "gradient-shift 8s ease infinite",
+        "sunrise": "sunrise 12s ease-in-out infinite",
       },
       backgroundImage: {
         "gradient-sunset": "var(--gradient-sunset)",
