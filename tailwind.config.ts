@@ -126,6 +126,22 @@ export default {
             background: "linear-gradient(135deg, hsl(15 85% 55%) 0%, hsl(30 90% 65%) 30%, hsl(35 95% 70%) 60%, hsl(200 70% 70%) 100%)",
           },
         },
+        "glow-pulse": {
+          "0%, 100%": {
+            filter: "drop-shadow(0 0 20px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 40px rgba(200, 220, 255, 0.2))",
+          },
+          "50%": {
+            filter: "drop-shadow(0 0 40px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 80px rgba(200, 220, 255, 0.4))",
+          },
+        },
+        "spotlight-glow": {
+          "0%, 100%": {
+            opacity: "0.3",
+          },
+          "50%": {
+            opacity: "0.7",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -134,10 +150,13 @@ export default {
         "fade-in-delay": "fade-in-delay 1.2s ease-out forwards",
         "gradient-shift": "gradient-shift 8s ease infinite",
         "sunrise": "sunrise 12s ease-in-out infinite",
+        "glow-pulse": "glow-pulse 3s ease-in-out infinite",
+        "spotlight-glow": "spotlight-glow 2s ease-in-out infinite",
       },
       backgroundImage: {
         "gradient-sunset": "var(--gradient-sunset)",
         "gradient-sky": "var(--gradient-sky)",
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
       boxShadow: {
         "glow": "var(--shadow-glow)",
