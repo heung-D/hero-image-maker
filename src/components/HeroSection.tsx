@@ -2,9 +2,20 @@ import logo from "@/assets/logo.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Animated Gradient Background - Dawn to Sunrise */}
-      <div className="absolute inset-0 animate-sunrise"></div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover opacity-90"
+      >
+        <source src="/videos/bg-clouds.mp4" type="video/mp4" />
+      </video>
+
+      {/* Dark Overlay for Better Logo Visibility */}
+      <div className="absolute inset-0 bg-black/20"></div>
 
       {/* Logo */}
       <div className="relative z-10 animate-fade-in">
